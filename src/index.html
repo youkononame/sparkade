@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparkade - Free Online Games - Play Now!</title>
+    <meta name="description" content="Sparkade is the #1 website for playing free online games on your mobile, tablet or computer. No downloads, no login. Play now!" />
+    <meta name="keywords" content="games, online games, Sparkade, fun games, free games, interactive games, unblocked games, games for school" />
+    <meta property="og:title" content="Sparkade - Free Online Games - Play Now!" />
+    <meta property="og:description" content="Sparkade is the #1 website for playing free online games on your mobile, tablet or computer. No downloads, no login. Play now!" />
+    <meta property="og:url" content="https://sparkade.net" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content="Sparkade - Free Online Games - Play Now!" />
+    <meta name="twitter:description" content="Sparkade is the #1 website for playing free online games on your mobile, tablet or computer. No downloads, no login. Play now!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/output.css" />
+</head>
+
+<body>
+    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div class="px-3 py-3 lg:px-5 lg:pl-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start rtl:justify-end">
+                    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                            <span class="sr-only">Open sidebar</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+                            </svg>
+                        </button>
+                    <a href="https://sparkade.net/" class="flex ms-2 md:me-24">
+                        <img src="/favicon.svg" class="h-8 me-3" alt="Sparkade Logo" />
+                        <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Sparkade</span>
+                    </a>
+                </div>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-700">
+                        <li>
+                            <a target="_blank" href="https://sparkade.net/discord" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Discord</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-76 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="relative mb-4">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                </div>
+                <input type="search" id="search" class="focus:outline-none block w-full p-3 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" oninput="searchGames();" />
+            </div>
+            <ul id="game-container" class="space-y-2 font-medium"></ul>
+        </div>
+    </aside>
+
+    <main class="lg:ml-[304px] mt-[57px]">
+        <iframe src="/games/1/index.html" id="game" class="w-full" style="height: calc(100vh - 57px);"></iframe>
+    </main>
+
+    <script>
+        let games = [];
+            fetch("/games/games.json")
+            .then((response) => response.json())
+            .then((data) => {
+                games = data;
+                
+                const container = document.getElementById("game-container");
+                data.forEach((project) => {
+                    const game = document.createElement("li");
+                    game.innerHTML = `
+                        <a onclick="changeGame('${project.link}');" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <span class="ms-3">${project.title}</span>
+                        </a>
+                    `;
+                    container.appendChild(game);
+                });
+            })
+            .catch((error) => console.error("Error:", error));
+            
+            function searchGames() {
+                const input = document.getElementById("search");
+                const filter = input.value.toUpperCase();
+                const container = document.getElementById("game-container");
+                container.innerHTML = "";
+                games
+                    .filter((game) => game.title.toUpperCase().includes(filter))
+                    .forEach((project) => {
+                    const game = document.createElement("li");
+                    game.innerHTML = `
+                        <a onclick="changeGame('${project.link}');" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <span class="ms-3">${project.title}</span>
+                        </a>
+                    `;
+                    container.appendChild(game);
+                });
+            }
+
+            function changeGame(newGame) {
+                document.getElementById("game").src = newGame;
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "Sparkade - Free Online Games",
+  "short_name": "Sparkade",
+  "theme_color": "#fde047",
+  "background_color": "#f4f4f5",
+  "display": "minimal-ui",
+  "start_url": "/",
+  "scope": ".",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
