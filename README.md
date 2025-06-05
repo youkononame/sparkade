@@ -1,3 +1,8 @@
+# Archived
+
+Everything Sparkade-related has been moved to the [Sparkade.net organization](https://github.com/Sparkade-net)
+
+
 # [Sparkade.net](https://sparkade.net)
 
 > A no-nonsense HTML5 games site
