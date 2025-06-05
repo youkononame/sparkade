@@ -3,15 +3,9 @@
 > A no-nonsense HTML5 games site
 
 
-## Deployment
+## Credits
 
-This project uses [TailwindCSS](https://tailwindcss.com) and [Flowbite](https://flowbite.com).
-
-To build, run:
-```bash
-npm install
-NODE_ENV=production npx @tailwindcss/cli -i input.css -o output.css
-```
+Games ripped from [3kh0-assets](https://gitlab.com/3kh0/3kh0-assets)
 
 
 ## License
