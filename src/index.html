@@ -68,12 +68,12 @@
     </aside>
 
     <main class="lg:ml-[304px] mt-[57px]">
-        <iframe src="/games/1/index.html" id="game" class="w-full" style="height: calc(100vh - 57px);"></iframe>
+        <iframe src="https://r2.sparkade.net/1/index.html" id="game" class="w-full" style="height: calc(100vh - 57px);"></iframe>
     </main>
 
     <script>
         let games = [];
-            fetch("/games/games.json")
+            fetch("games.json")
             .then((response) => response.json())
             .then((data) => {
                 games = data;
@@ -82,7 +82,7 @@
                 data.forEach((project) => {
                     const game = document.createElement("li");
                     game.innerHTML = `
-                        <a onclick="changeGame('${project.link}');" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a onclick="changeGame('https://r2.sparkade.net${project.link}');" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <span class="ms-3">${project.title}</span>
                         </a>
                     `;
@@ -101,7 +101,7 @@
                     .forEach((project) => {
                     const game = document.createElement("li");
                     game.innerHTML = `
-                        <a onclick="changeGame('${project.link}');" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a onclick="changeGame('https://r2.sparkade.net${project.link}');" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <span class="ms-3">${project.title}</span>
                         </a>
                     `;
